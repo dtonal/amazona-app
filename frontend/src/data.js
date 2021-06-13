@@ -9,7 +9,8 @@ const data = {
             brand: 'Chiquita',
             rating: 4.5,
             numReviews: 10,
-            description: 'yellow and yummie'
+            description: 'yellow and yummie',
+            countInStock: 5
         },
         {
             _id: '2',
@@ -20,7 +21,8 @@ const data = {
             brand: 'Altes Land',
             rating: 4,
             numReviews: 44,
-            description: 'round. you know it and you love it!'
+            description: 'round. you know it and you love it!',
+            countInStock: 0
         },
         {
             _id: '3',
@@ -31,7 +33,8 @@ const data = {
             brand: 'Obsthof P.Legga',
             rating: 4.5,
             numReviews: 10,
-            description: 'just red and tasty'
+            description: 'just red and tasty',
+            countInStock: 5
         },
         {
             _id: '4',
@@ -42,7 +45,8 @@ const data = {
             brand: 'Valensina',
             rating: 4.5,
             numReviews: 77,
-            description: 'Uncle Dietmeyer produce them'
+            description: 'Uncle Dietmeyer produce them',
+            countInStock: 5
         },
         {
             _id: '5',
@@ -53,7 +57,8 @@ const data = {
             brand: 'Obsthof P.Legga',
             rating: 3,
             numReviews: 3,
-            description: 'expensive berries'
+            description: 'expensive berries',
+            countInStock: 5
         },
         {
             _id: '6',
@@ -64,7 +69,8 @@ const data = {
             brand: 'Penny',
             rating: 3,
             numReviews: 1452,
-            description: 'green'
+            description: 'green',
+            countInStock: 5
         }
     ]
 }
