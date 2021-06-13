@@ -2,70 +2,70 @@ const data = {
     products: [
         {
             _id: '1',
-            name: 'Clever Celebration 600',
-            category: 'Kastenwagen',
+            name: 'Banana',
+            category: 'Fruit',
             image: '/images/p1.jpg',
-            price: 45000,
-            brand: 'Clever Vans',
+            price: 0.60,
+            brand: 'Chiquita',
             rating: 4.5,
             numReviews: 10,
-            description: 'the best one'
+            description: 'yellow and yummie'
         },
         {
             _id: '2',
-            name: 'Clever Celebration 540',
-            category: 'Kastenwagen',
+            name: 'Apple',
+            category: 'Fruit',
             image: '/images/p2.jpg',
-            price: 45000,
-            brand: 'Clever Vans',
+            price: 0.50,
+            brand: 'Altes Land',
             rating: 4,
             numReviews: 44,
-            description: 'the best one'
+            description: 'round. you know it and you love it!'
         },
         {
             _id: '3',
-            name: 'Clever Celebration 640',
-            category: 'Kastenwagen',
+            name: 'Strawberry',
+            category: 'Nuts',
             image: '/images/p3.jpg',
-            price: 45000,
-            brand: 'Clever Vans',
+            price: 2.5,
+            brand: 'Obsthof P.Legga',
             rating: 4.5,
             numReviews: 10,
-            description: 'the best one'
+            description: 'just red and tasty'
         },
         {
             _id: '4',
-            name: 'Clever Move 600',
-            category: 'Kastenwagen',
+            name: 'Orange',
+            category: 'Fruit',
             image: '/images/p4.jpg',
-            price: 45000,
-            brand: 'Clever Vans',
+            price: 1,
+            brand: 'Valensina',
             rating: 4.5,
-            numReviews: 10,
-            description: 'the best one'
+            numReviews: 77,
+            description: 'Uncle Dietmeyer produce them'
         },
         {
             _id: '5',
-            name: 'Clever Runner 636',
-            category: 'Kastenwagen',
+            name: 'Blackberry',
+            category: 'Berry',
             image: '/images/p5.jpg',
-            price: 45000,
-            brand: 'Clever Vans',
-            rating: 4.5,
-            numReviews: 10,
-            description: 'the best one'
+            price: 3,
+            brand: 'Obsthof P.Legga',
+            rating: 3,
+            numReviews: 3,
+            description: 'expensive berries'
         },
         {
             _id: '6',
-            name: 'Clever VarioKids 600',
-            category: 'Kastenwagen',
+            name: 'Cucumber',
+            category: 'Vegetable',
             image: '/images/p6.jpg',
-            price: 45000,
-            brand: 'Clever Vans',
-            rating: 4.5,
-            numReviews: 10,
-            description: 'the best one'
+            price: 1.20,
+            brand: 'Penny',
+            rating: 3,
+            numReviews: 1452,
+            description: 'green'
         }
     ]
 }
-export default data;
+exports.products = data.products;
