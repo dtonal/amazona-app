@@ -93,7 +93,7 @@ footer {
 
 .card {
   border: 0.1rem grey solid;
-  background-color: lightgrey;
+  background-color: #f0f1f2;
   border-radius: 0.5rem;
   margin: 1rem;
 }
@@ -126,4 +126,8 @@ img.medium {
 .rating span {
   color: gold;
   margin: 0.1rem;
+}
+
+.rating span:last-child {
+  color: #404040
 }

@@ -1,29 +1,6 @@
 
 import { products } from './data.js';
-
-const cards = products.map(product => {
-  return <div className="card" key={product._id}>
-    <a href={'products/' + product._id + '.html'}>
-      <img className="medium" src={'images/p' + product._id + '.jpg'} alt="product" />
-    </a>
-    <div className="card-body">
-      <a href={'products/' + product._id + '.html'}>
-        <h2>{product.name}</h2>
-      </a>
-      <div className="rating">
-        <span><i className="fa fa-star"></i></span>
-        <span><i className="fa fa-star"></i></span>
-        <span><i className="fa fa-star"></i></span>
-        <span><i className="fa fa-star"></i></span>
-        <span><i className="fa fa-star"></i></span>
-      </div>
-      <div className="price">
-        {product.price}
-      </div>
-    </div>
-  </div>
-});
-
+import Product from './components/Product.js'
 
 function App() {
 
@@ -40,7 +17,7 @@ function App() {
       </header>
       <main>
         <div className="row center">
-          {cards}
+          {products.map(product => <Product key={product._id} product={product} />)}
         </div>
       </main>
       <footer className="row center">
