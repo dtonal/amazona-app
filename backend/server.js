@@ -8,7 +8,8 @@ app.get('/', (req, res) => {
 })
 
 app.get('/api/products', (req, res) => {
-    res.send(data.products);
+    setTimeout(() => { res.send(data.products); }, 2000);
+    // res.send(data.products);
 })
 
 app.get('/api/product/:id', (req, res) => {
