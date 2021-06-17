@@ -1,38 +1,24 @@
-import { React, useEffect, useState } from 'react'
+import { React, useEffect } from 'react'
 import Product from '../Product'
-import axios from 'axios';
 import LoadingBox from '../LoadingBox';
 import ErrorBox from '../ErrorBox';
+import { useDispatch, useSelector } from 'react-redux';
+import { listProducts } from '../../actions/productActions';
 
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 
 export default function HomeScreen() {
-    const [error, setError] = useState(null);
-    const [isLoading, setLoading] = useState(false);
-    const [products, setProducts] = useState([]);
+    const dispatch = useDispatch();
+    const productList = useSelector(state => state.productList);
+    const { loading, error, products } = productList;
 
     useEffect(() => {
-        const sendGetRequest = async () => {
-            try {
-                setLoading(true);
-                const resp = await axios.get(`/apin/products`)
-                console.log(resp.data);
-                const products = resp.data;
-                setProducts(products);
-                setLoading(false);
-            } catch (err) {
-                // Handle Error Here
-                console.error(err);
-                setLoading(false);
-                setError(err);
-            }
-        };
-        sendGetRequest();
-    }, [])
+        dispatch(listProducts());
+    }, []);
 
     if (error) {
         return <ErrorBox variant="danger">{error.message}</ErrorBox>;
-    } else if (isLoading) {
+    } else if (loading) {
         return <LoadingBox></LoadingBox>;
     } else {
         return (
