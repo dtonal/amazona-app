@@ -14,7 +14,7 @@ export default function HomeScreen() {
 
     useEffect(() => {
         dispatch(listProducts());
-    }, []);
+    }, [dispatch]);
 
     if (error) {
         return <ErrorBox variant="danger">{error.message}</ErrorBox>;
