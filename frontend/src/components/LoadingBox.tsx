@@ -1,4 +1,3 @@
-import React from 'react';
 import Loader from 'react-loader-spinner';
 
 export default function LoadingBox() {
@@ -14,3 +13,4 @@ export default function LoadingBox() {
         </div>
     )
 }
+

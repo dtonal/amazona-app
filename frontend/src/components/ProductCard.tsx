@@ -1,6 +1,7 @@
-import Rating from './Rating.js';
+import Rating from './Rating';
+import Product from './data/interfaces/product';
 
-function Product(props) {
+function ProductCard(props: { product: Product }) {
     const product = props.product;
     return < div className="card" >
         <a href={'product/' + product._id}>
@@ -18,4 +19,4 @@ function Product(props) {
     </div>;
 }
 
-export default Product;
+export default ProductCard;
